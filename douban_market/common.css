@@ -1,0 +1,297 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+{
+    -webkit-text-size-adjust: 100%;
+    /* 是否调整字体大小 */
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    font:inherit;
+    border: 0;
+  /* reset -- *贪婪匹配性能不好 选择所有标签，性能更好 */
+}
+dl,ol,ul{
+    list-style: none;
+}
+html{
+    font-style:10px  !important;/* 优先性最高 */
+    
+}
+body{
+    margin: 0;
+    background-color: #fbfbfb;
+    font-family: Helvetica,Arial,Roboto,PingFang SC,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+#db-global-nav{
+    height: 28px;
+    color: #d5d5d5;
+    background-color: #545652;
+    min-width: 950px;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+.bd{
+
+}
+#db-global-nav .global-nav-items{
+    font-size: 0;
+}
+#db-global-nav ul{
+    margin: 0;
+    padding: 0;
+}
+#db-global-nav .global-nav-items li{
+    display: inline-block;
+    /* inline-block解决了行内块级的问题，
+    但是会在两个元素之间增加一点像素的间距，
+    两种解决方案 删除元素间的换行</li><li>
+    第二组方案 将父元素font-size设为0
+    子元素 重新设定font-size*/
+    font-size: 12px;
+    zoom: 1;/* 放大 */
+    line-height: 28px;
+    vertical-align: baseline;/*    */
+}
+/* 优先级100+1 */
+#db-global-nav a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 优先级#100 .10 标签1  100+10+1  优先级高的覆盖低的 如果相同就下面覆盖上面*/
+#db-global-nav .global-nav-items a{
+    display: inline-block;
+    zoom: 1;
+    padding: 0 12px;
+    height: 28px;
+}
+#db-global-nav a:link,
+#db-global-nav a:visited,
+#db-global-nav a:hover,
+#db-global-nav a:active{
+    color: #d5d5d5;
+}
+#db-global-nav .top-nav-info{
+    float:right;
+    margin: 0 12px 0 0;
+    line-height: 28px;
+    font-size: 0;
+}
+#db-global-nav .top-nav-info a{
+    display: inline-block;
+    font-size: 12px;
+    zoom: 1;
+    margin: 0;
+    padding: 0 12px;
+    height: 28px;
+}
+#db-global-nav .top-nav-doubanapp{
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    line-height: 28px;
+}
+#db-global-nav .top-nav-doubanapp .lnk-doubanapp{
+    display: inline-block;
+    zoom: 1;
+    padding: 0 8px;
+    height: 28px;                                                                                                                                                                                                                                                                                                                                                                                           
+}
+#db-global-nav .top-nav-doubanapp .more-items {
+    padding: 10px 20px 30px;
+    left:-76px;
+    width: 211px;
+    border-top: none;
+    color: #111;
+    font-size: 15px;
+    line-height: 1.62;
+    font-weight: bold;
+    text-align: center;
+    -webkit-font-smoothing:antialiased;/* 文字抗锯齿 */
+    text-rendering: optimizeLegibility;/*渲染文本 */
+}
+#db-global-nav .top-nav-doubanapp .more-items .appintro-title {
+    padding-top: 170px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    background: url() no-repeat center;
+}
+#db-global-nav .top-nav-doubanapp .more-items .qrcode {
+    padding-top:160px;
+    margin-top: 30px;
+    font-size: 0;
+    background: url() no-repeat center;
+         
+}
+#db-global-nav .top-nav-doubanapp .download{
+    margin-top: 10px;
+}
+#db-global-nav .top-nav-doubanapp .download a:link{
+    color: #37a;
+}
+#db-global-nav .top-nav-doubanapp .download a{
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    background: none;
+}
+#db-global-nav .more-active .more-items a{
+    line-height: 28px;
+    display: block;
+    padding: 0 20px;
+}
+#market-header{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 4px #e4e4e4;
+    height: 52px;
+}
+#market-header .header-inner{
+    zoom: 1;
+    width: 1024px;
+    margin: 0 auto ;
+    position: relative;
+    z-index: 1;
+}
+#market-header .header-inner:after, #market-header .header-inner:before{
+    content: "";
+    display: table;
+}
+#market-header .logo{
+    float: left;
+}
+#market-header .logo a{
+    text-decoration: none;
+}
+#market-header .market-logo{
+    width: 87px;
+    height: 20px;
+    margin-top: 16px;
+    display: inline-block;
+}
+#market-header .market-user{
+    float: right;
+    margin-left: 20px;
+}
+#market-header .user-people{
+    display: inline-block;
+    padding:15px 0;
+    cursor: pointer;
+}
+#market-header .market-user #header-user-pic{
+    color: #9b9b9b;
+    font-size: 12px;
+}
+#market-header .market-user #header-user-pic img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#market-header .market-user .user-people .nav-list{
+    position: absolute;
+    top: 52px;
+    background: #fff;
+}
+#market-header .market-user .user-people .nav-list:before{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 3;
+}
+#market-header .market-user .user-people .nav-list .nav-item{
+    padding: 8px 0;
+    list-style: none;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+#market-header .market-user .user-people .nav-list .nav-item a{
+    font-size: 13px;
+    cursor: pointer;
+    color: #9b9b9b;
+    text-decoration: none;
+}
+#market-header .header-inner:after, #market-header .header-inner:before{
+    content: "";
+    display: table;
+}
+.banner-wrapper{
+    width: 100%;
+    min-width: 1100px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    margin: 0 auto;
+    margin-top: 0;
+}
+ .banner-wrapper .slide-box {
+     height: 420px;
+}
+.slide-box{
+    zoom: 1;
+    width: 100%;
+}
+.slide-box:after, .slide-box:before{
+    display: table;
+    content: "";
+}
+.slide .slide-inner{
+    overflow: hidden;
+}
+.slide .slide-inner .slide-item{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    z-index: 1;
+    min-width: 950px;
+    max-width: 100%;
+    text-align: center;
+    /* left: 1349px; */
+}
+.slide .slide-inner .slide-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.slide .slide-inner .slide-item a img{
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.slide .slide-inner .slide-item img{
+    display: block;
+    margin: 0 auto;
+    min-height: 30px;
+    width: 100%;
+}
+.slide .slide-inner .slide-button-next{
+    right: 0;
+    background:url(/f/market/b8f709ab3c33c32e8e07c9ec61578dbf194fdd60/pics/homepage/icon-slides.png) no-repeat -125px 50%;
+    
+}
+.slide-box .slide .slide-button-next, .slide-box .slide .slide-button-prev{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 41px;
+    height: 49px;
+    margin-top: -35px;
+    outline:0;
+}
+.slide .slide-inner .slide-butt
